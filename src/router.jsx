@@ -15,12 +15,21 @@ const Wrapper = styled.div`
     flex-direction: column;
     border-radius: 5px;
 `
+
+const BodyWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 20px 32px;
+`
+
 const Layout = () => {
     return (
       <>
       <Wrapper>
         <NavBar />
-        <Outlet />
+        <BodyWrapper>
+            <Outlet />
+        </BodyWrapper>
     </Wrapper>
       </>
     );

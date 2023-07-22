@@ -18,6 +18,6 @@ export const NavBarWrapper = styled.div`
 export const Logo = styled.img`
     width: 30%;
     @media (max-width: 768px) {
-        width: 20%;
+        width: 30%;
     }
 `
