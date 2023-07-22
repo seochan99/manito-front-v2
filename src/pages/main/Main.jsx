@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+import { MatchingButton, MatchingWrapper } from './style';
 
 export default function Main() {
     const [userName, setUserName] = useState("");
@@ -9,6 +11,13 @@ export default function Main() {
     <>
         {userName}마니또님 환영합니다!
 
+        <Link to="/manito" style={{marginTop:"30px"}}>
+            <MatchingWrapper>
+                <MatchingButton>
+                마니또 매칭하러가기
+                </MatchingButton>    
+            </MatchingWrapper>
+        </Link>
         {/* 마니또 매칭하러가기 */}
     </>
   )

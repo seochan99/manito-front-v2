@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Manito() {
   return (
-    <div>Manito</div>
+    <>
+    마니또 매칭 페이지
+    </>
   )
 }

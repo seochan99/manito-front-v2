@@ -2,6 +2,7 @@ import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Main from "./pages/main/main";
 import { styled } from "styled-components";
 import NavBar from "./components/layouts/NavBar";
+import Manito from "./pages/manito/Manito";
 
 
 const Wrapper = styled.div`
@@ -42,6 +43,7 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Layout/>}>
             <Route index path="/" element={<Main/>} />
+            <Route path="manito" element={<Manito/>} />
         </Route>
 
       </Routes>
